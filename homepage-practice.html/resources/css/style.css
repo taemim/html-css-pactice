@@ -1,0 +1,184 @@
+@charset "UTF-8";    
+
+html {
+    /* 사용자 설정 문자 크기 그대로 반영 되도록 */
+    font-size : 100%;
+}
+
+body {
+    line-height: 2.0;
+    color : #27282d;
+    background: #e8e8e8;
+}
+
+/* 링크 밑줄 제거 */
+a {
+    text-decoration: none;
+    color : #c2c2c2;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 콘텐츠 크기 제한*/
+.wrapper {
+    max-width: 1100px;
+    margin : 0 auto;
+    padding : 0 4%;
+}
+
+/* 메인---------------------------------------------- */
+
+.page-header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.main-title{
+    padding: 0px 50px 0px 50px;
+    font-size: 3em;
+}
+
+/* 메인 제목 왼쪽 */
+.box1{
+    float: left;
+}
+
+/* 메인 제목 오른쪽*/
+.box2{
+    float: right;
+    display: inline-block;
+}
+
+
+/* 메뉴 -----------------------------------------------------------------*/
+
+/* nav 메뉴 장식 */
+.main-nav {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+ul { 
+    list-style:none; 
+    cursor:pointer 
+}
+
+li {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+    position: relative;
+}
+
+li > a:hover {
+    color: black;
+}
+
+/* 밑줄 애니메이션 hover*/
+.hover a::after {
+    display: block; 
+    content: "";
+    border-bottom: 3px rgb(68, 68, 68) solid;
+    transform: scaleX(0);
+    transition: all 240ms ease;
+    height: 0; width: 100%;
+}
+
+.hover a:hover::after {
+    transform: scaleX(1);
+ }
+
+/*-------------------------------------------------------------*/
+
+.circle {
+    position: fixed;
+    top : 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 250px;
+    height: 250px;
+    border: 5px solid #e8e8e8;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+/* animation: rotate_image all linear infinite; */
+
+@keyframes rotate_image{
+    100%{
+        transform: rotate(360dag);
+    }
+}
+
+.home-content {
+    padding: 0px 50px 0 50px;
+}
+
+.home-content h1{
+    padding: auto;
+    font-size: 5em;
+    padding-top: 20%;
+}
+
+
+
+/* 배경이미지 --------------------------------------*/
+#img-bg1{
+    height:1980px;
+    background-image: url("../images/img-bg2.jfif");
+    background-size: contain;
+}
+
+#img-bg2{
+    height:1980px;
+    background-image: url("../images/img-bg3.jfif");
+    background-size: contain;
+}
+
+#img-bg3{
+    height:1980px;
+    background-image: url("../images/img-bg4.jfif");
+    background-size: contain;
+}
+
+.section {
+    height: 900px;
+}
+
+/* 버튼 ------------------------------------------*/
+.button{
+    color :rgb(220, 220, 220);
+    font-size: 2em;
+    position: relative;
+    left: 50px;
+    top : 100px;
+}
+
+.button:hover {
+    color : rgb(179, 179, 179);
+}
+
+.section h1 {
+    margin-top: 20%;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+#aboutMe {
+    padding-bottom: 20px;
+}
+
+.button1 {
+    color: #27282d;
+    font-size: 1.25em;
+}
+
+.button1:hover{
+    color: rgb(218, 120, 110);
+}

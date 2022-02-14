@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage-practice</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- 외부 스타일 시트 -->
+    <link href="..\homepage-practice.html\resources\css\style.css" rel="stylesheet" type="text/css">
+    <!-- 구글 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="home" class="">
+        <header class="page-header">
+            <div class="main-title box1"><a href="main.html">MIM</a></div>
+            <div class="main-title box2"><a href="main.html">Log</a></div>
+            
+            <div class="underline"></div>
+            <nav class="main-nav">
+                <ul class="hover">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="circle"></div>
+        <div class="home-content">
+            <h1 class="page-title">developer</h1>
+            <p>
+                <b>웹 개발자</b>가 되기 위한 과정들을 담았습니다. <br>
+                5년 후 10년 후에도 성장할 수 있는 개발자가 되는 것이 목표입니다.
+            </p>
+        </div>
+        <div>
+            <!-- 메인 배경 이미지-->
+            <section class="section" id="section1">
+                <div id="img-bg1">
+                    <div><a href="#section2" id ="button1" class="button">more</a></div>
+                    <h1>함께 일하는 개발자</h1>
+                </div>
+            </section>
+
+            <section class="section" id="section2">
+                <div id="img-bg2">
+                    <div><a href="#section3" id ="button2" class="button">more</a></div>
+                    <h1>즐기는 개발자</h1>
+                </div>
+            </section>
+
+            <section class="section" id="section3">
+                <div id="img-bg3">
+                    <div><a href="#aboutMe"  id ="button3" class="button">Who is?</a></div>
+                    <h1>끝까지 가는 개발자</h1>
+                </div>
+            </section>
+        </div>
+        <div class="home-content" id="aboutMe">
+            <h1 class="page-title">TAEMI IM</h1>
+            <h3>수행 능력</h3>
+            <p>
+                응용소프트웨어의 개발 범위와 목표를 설정한다. <br>
+                소프트웨어를 개발·완성시키기 위한 전체적인 개발 계획과 자원 조달 계획을 편성한다.<br>
+                응용시스템에 대한 정보보호의 방법과 계획을 설정한다.<br>
+                소프트웨어의 세부적인 기능 및 사양에 관한 상세 설계를 한다.<br>
+                상세 설계에 따라서 단위 프로그램을 개발하고, 개발된 여러 프로그램들을 모아서 응용시스템으로 결합시킨다.<br>
+                해당 컴퓨터시스템에 개발된 프로그램을 설치하고 기능 및 성능을 종합적으로 평가·분석한다.<br>
+                패키지성의 개발 소프트웨어에 대해서는 체계적인 버전관리를 한다.<br>
+                테스트를 통해 버그를 수정한다.<br>
+                응용소프트웨어에 대한 사용자의 운영 교육과 기술을 지원한다.<br>
+            </p>
+            <div><a href="#home" class="button1">top</a></div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const button1 = document.getElementById('button1');
+    const section1 = document.getElementById('section1');
+
+    button1.addEventListener('click', () => {
+        window.scrollBy({top: section1.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button2 = document.getElementById('button2');
+    const section2 = document.getElementById('section2');
+
+    button2.addEventListener('click', () => {
+        window.scrollBy({top: section2.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button3 = document.getElementById('button3');
+    const section3 = document.getElementById('section3');
+
+    button3.addEventListener('click', () => {
+        window.scrollBy({top: section3.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+
+
+</script>
+
+</html>
