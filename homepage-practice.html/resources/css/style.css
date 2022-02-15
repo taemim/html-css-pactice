@@ -3,12 +3,12 @@
 html {
     /* 사용자 설정 문자 크기 그대로 반영 되도록 */
     font-size : 100%;
+    background-color: #e8e8e8;
 }
 
 body {
     line-height: 2.0;
     color : #27282d;
-    background: #e8e8e8;
 }
 
 /* 링크 밑줄 제거 */
@@ -21,19 +21,11 @@ img {
     max-width: 100%;
 }
 
-/* 콘텐츠 크기 제한*/
-.wrapper {
-    max-width: 1100px;
-    margin : 0 auto;
-    padding : 0 4%;
-}
-
 /* 메인---------------------------------------------- */
 
 .page-header{
     position: fixed;
     width: 100%;
-    height: 100px;
 }
 
 .main-title{
@@ -126,7 +118,10 @@ li > a:hover {
     padding-top: 20%;
 }
 
-
+.home-content h2{
+    padding: auto;
+    font-size: 2.5em;
+}
 
 /* 배경이미지 --------------------------------------*/
 #img-bg1{
@@ -174,11 +169,187 @@ li > a:hover {
     padding-bottom: 20px;
 }
 
-.button1 {
-    color: #27282d;
-    font-size: 1.25em;
+
+/* Project 페이지 ---------------------------------------------------------------------------*/
+
+
+html .resume {
+    /* 사용자 설정 문자 크기 그대로 반영 되도록 */
+    font-size : 100%;
+    background: #1f1f1f;
 }
 
-.button1:hover{
-    color: rgb(218, 120, 110);
+.wrapper{
+    padding: 10% 300px 0 20%;
+    display: flex;
+    justify-content: center;
 }
+
+article {
+    width: 74%;
+    color: #e8e8e8;
+}
+
+aside {
+    width: 30%;
+}
+
+.post-info {
+    border-top:2px #c2c2c2 solid;
+    border-bottom:2px #c2c2c2 solid;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.post-date,
+.post-cat {
+    display: inline;
+    justify-content :right;
+}
+
+article img {
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* side bar ------------------------------------ */
+
+
+.sub-title {
+    font-size: 1.5em;
+    padding : 0 8px 8px;
+    font-weight: normal;
+    text-align: center;
+    color: #fa448c;
+}
+.sub-title mark {
+    padding: 0 15px 0 15px;
+    /* background: #c2c2c2; */
+}
+
+aside p {
+    padding : 12px 10px;
+}
+
+.sub-menu {
+    list-style: none;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sub-menu li {
+    border-bottom: #fa448c;
+    width: 60%;
+}
+
+.sub-menu a {
+    font-size: 1.25em;
+    color : #c2c2c2;
+    padding : 10px;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color : #fa448c;
+}
+
+#sidebar {
+    display: flex;
+}
+
+
+.resume li > a:hover {
+    color: #c2c2c2;
+}
+
+/* 밑줄 애니메이션 hover*/
+.hover1 a::after {
+    display: block; 
+    content: "";
+    border-bottom: 2px #fa448c solid;
+    transform: scaleX(0);
+    transition: all 240ms ease;
+    color: #c2c2c2;
+    height: 0; width: 100%;
+}
+
+.hover1 a:hover::after {
+    transform: scaleX(1);
+ }
+
+ .sub-menu li::after {
+    display: block; 
+    content: "";
+    border-bottom: 3px #fa448c solid;
+    transform: scaleX(0);
+    transition: all 240ms ease;
+    height: 0; width: 100%;
+}
+
+.sub-menu li:hover::after {
+    transform: scaleX(1);
+ }
+
+
+/* footer --------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 16px 0;
+}
+
+footer p {
+    color :#ffffff;
+    border-top: 1px solid #a3a3a3;
+}
+
+/* contact grid ---------------------------------------------------------*/
+
+
+.item1 img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.grid1 {
+    display:grid;
+    justify-items:center;
+    margin:30px 0 30px 0 ;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-flow: column;
+
+}
+
+.scale {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all 1s ease;   
+ }
+  .scale:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+ #contactfter small {
+    color: #1f1f1f;
+}
+
+
+
+
+
+
+
